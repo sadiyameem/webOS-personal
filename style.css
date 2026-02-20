@@ -1,11 +1,76 @@
 body {
     background-color: #e8e6f5;
+    background-image: url('./images/cat-print.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
 }
 
+.window {
+    background-color: white;
+    width: 500px;
+    border-radius: 15px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.window-content {
+    padding: 20px;
+}
+
+.window-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red {background-color: #ff5f57;}
+.yellow {background-color: #ffbd2e;}
+.green {background-color: #28c840;}
+
+.title {
+    font-weight: bold;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: cneter;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
 p {
-    margin: 10px 0;
+    margin-bottom: 10px 0;
     padding: 8px;
     border-radius: 6px;
     margin-bottom: 10x 0;
