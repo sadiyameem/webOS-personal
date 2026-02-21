@@ -51,11 +51,20 @@ const welcomeOpen = document.getElementById("welcomeopen");
 const myAppIcon = document.getElementById("myAppIcon");
 const myAppWindow = document.getElementById("myAppWindow");
 const myAppClose = document.getElementById("myAppClose");
+const contactIcon = document.getElementById("contactIcon");
+const contactWindow = document.getElementById("contactWindow");
+const contactClose = document.getElementById("contactClose");
+
+contactIcon.addEventListener("click", () => {
+    contactWindow.style.display = "flex";
+});
+
+contactClose.addEventListener("click", () => {
+    contactWindow.style.display = "none";
+});
 
 myAppIcon.addEventListener("click", () => {
     myAppWindow.style.display = "flex";
-    biggestIndex++;
-    myAppWindow.style.zIndex = biggestIndex;
 });
 
 myAppClose.addEventListener("click", () => {
@@ -63,6 +72,7 @@ myAppClose.addEventListener("click", () => {
 });
 
 dragElement(document.getElementById("myAppWindow"));
+dragElement(contactWindow);
 
 welcomeClose.addEventListener("click", () => {
     welcomeScreen.style.display = "none";
