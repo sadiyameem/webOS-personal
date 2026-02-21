@@ -48,6 +48,21 @@ function dragElement(element) {
 const welcomeScreen = document.getElementById("welcome");
 const welcomeClose = document.getElementById("welcomeclose");
 const welcomeOpen = document.getElementById("welcomeopen");
+const myAppIcon = document.getElementById("myAppIcon");
+const myAppWindow = document.getElementById("myAppWindow");
+const myAppClose = document.getElementById("myAppClose");
+
+myAppIcon.addEventListener("click", () => {
+    myAppWindow.style.display = "flex";
+    biggestIndex++;
+    myAppWindow.style.zIndex = biggestIndex;
+});
+
+myAppClose.addEventListener("click", () => {
+    myAppWindow.style.display = "none";
+});
+
+dragElement(document.getElementById("myAppWindow"));
 
 welcomeClose.addEventListener("click", () => {
     welcomeScreen.style.display = "none";

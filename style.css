@@ -94,3 +94,26 @@ img {
     height: 150px;
     border-radius: 16px;
 }
+
+#desktopApps {
+    padding-top: 70px;
+    padding-left: 20px;
+}
+
+.app-icon {
+    text-align: center;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.app-icon img {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+}
+
+.app-icon p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
