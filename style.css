@@ -52,6 +52,15 @@ body {
     font-weight: bold;
 }
 
+.closebutton {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color: #ec6b5e;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.25);
+}
+
 .top-bar {
     position: fixed;
     top: 0;
@@ -59,7 +68,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: cneter;
+    align-items: center;
     padding: 10px 20px;
     color: black;
     font-weight: bold;
@@ -70,10 +79,9 @@ body {
 }
 
 p {
-    margin-bottom: 10px 0;
+    margin: 10px 0;
     padding: 8px;
     border-radius: 6px;
-    margin-bottom: 10x 0;
 }
 
 h1 {
